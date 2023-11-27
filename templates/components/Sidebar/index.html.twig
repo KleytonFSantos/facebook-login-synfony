@@ -17,16 +17,16 @@
         <div class="my-4 bg-gray-600 h-[1px]"></div>
 
         {{
-        component(
-            'Sidebar:Dropdown',
-            {
-                title: 'Categories',
-                dropdownMenu: [
-                    component('Sidebar:Menu', { title: 'Bookmark', path: '', icon: 'bi bi-bookmark-fill' }),
-                    component('Sidebar:Menu', { title: 'Home', path: '', icon: 'bi bi-house-door-fill' })
-                ]
-            }
-        )
+            component(
+                'Sidebar:Dropdown',
+                {
+                    title: 'Categories',
+                    dropdownMenu: [
+                        component('Sidebar:Menu', { title: 'Bookmark', path: '', icon: 'bi bi-bookmark-fill' }),
+                        component('Sidebar:Menu', { title: 'Home', path: '', icon: 'bi bi-house-door-fill' })
+                    ]
+                }
+            )
         }}
         {{ component('Sidebar:Menu', { title: 'Logout', path: path('app_logout'), icon: 'bi bi-box-arrow-in-right' }) }}
     </div>
